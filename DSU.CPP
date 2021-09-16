@@ -30,7 +30,7 @@ void join(int a,int b)
         if(sz[a]>sz[b])
         swap(a,b);
         par[a]=b;
-        sz[b]+=sz[b];
+        sz[b]+=sz[a];
     }
 }
 
