@@ -12,7 +12,7 @@ const int oo=0x3f3f3f3f;
 const lld loo=0x3f3f3f3f3f3f3f3f;
 int n,m;
 vector<pair<lld,pair<int,int>>>gp;
-pair<bool,int> bellman(int src,int tar)
+pair<bool,lld> bellman(int src,int tar)
 {
     vector<lld>dis(n,loo);
     dis[src]=0;
@@ -60,7 +60,7 @@ int main()
         --u,--v;
         gp.pb({-c,{u,v}});
     }
-    pair<bool,int> ans=bellman(0,n-1);
+    pair<bool,lld> ans=bellman(0,n-1);
     if(ans.first)
         cout<<"inf"<<endl;
     else
