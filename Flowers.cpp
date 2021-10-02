@@ -13,7 +13,8 @@ int t,k;
 ll sol(int i){
     if(i==0)
         return 1;
-        if(i<0)return 0;
+    if(i<0)
+        return 0;
     if(mem[i]!=-1) return mem[i];
     ll op1=sol(i-1);
     ll op2=sol(i-k);
