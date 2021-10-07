@@ -51,6 +51,7 @@ ll popFront(ll h,ll xp,ll p,char ch )
 {
     return fixMod(h-((xp*ch)%p),p);
 }
+// to extend the range 2 wiz range one so ican use unordered_set as cpp doesnt suppor unordered set for pairs so the time for sorting in aet is eleminated
 ll to(ll h1,ll h2,ll p2){
  return h1*p2+h2;
 }
