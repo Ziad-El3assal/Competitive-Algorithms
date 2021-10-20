@@ -1,5 +1,5 @@
 /*
-i need to find the first node that connect is common in atree bransh  
+i need to find the kth ancestor of a node for differemt queries O(nlon(maxn))
 */
 #include <bits/stdc++.h>
 using namespace std;
