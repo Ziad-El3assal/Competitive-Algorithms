@@ -19,7 +19,7 @@ int m;
 vector<vector<int>>gp;
 vector<int>depth;
 vector<vector<int>> anc;
-// getting the log of input O(log(maxn))
+// getting the log of input O(1)
 int Log(int x){
     return 31-__builtin_clz(x);
 }
