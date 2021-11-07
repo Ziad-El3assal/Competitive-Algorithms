@@ -18,13 +18,12 @@ const long double ESP = 1e-8;
 vector<vector<int>> gp;
 vector<int> vst;
 int sol=0;
-bool dfs(int ro){
+void dfs(int ro){
     vst[ro]=1;
     for(auto i :gp[ro]){
         if(!vst[i])
             dfs(i);
     }
-    return true;
 }
 int main()
 {
