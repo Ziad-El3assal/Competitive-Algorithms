@@ -12,16 +12,20 @@ vector<vector<pair<int,int>>> gp;
 lld dijsktra(int src,int tar)
 {
     vector<lld>dis(n,oo);
+    // pqueue that give the smallest element instead od the largest
     priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> q;
+    //the cost of the node i start from is 0
     q.push({0,src});
     dis[src]=0;
     while(!q.empty())
     {
+        //the next promising node
         int u= q.top().second;
         int c=q.top().first;
         q.pop();
+        //here i have found my target
         if(u==tar) return c;
-        // if i get to z same node wiz different value n i dont need it
+        // if i get to z same node wiz different value n i dont need it as the p q have given me another root with the smallest cost possible
         // z code might work but wiz more time
         if(c!=dis[u])continue;
 
