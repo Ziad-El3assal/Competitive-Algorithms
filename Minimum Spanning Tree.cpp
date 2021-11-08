@@ -1,3 +1,4 @@
+// i got a graph and i need to find z weight of the min tree
 #include <iostream>
 #include<bits/stdc++.h>
 #include <vector>
@@ -40,6 +41,9 @@ void join(int a,int b)
         siz[b]+=siz[a];
     }
 }
+/*
+    if two nodes are not connected joining them and count the weight 
+*/
 lld kruskal()
 {
     lld ret=0;
