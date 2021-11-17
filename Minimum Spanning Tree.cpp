@@ -37,7 +37,7 @@ void join(int a,int b)
         {
             swap(a,b);
         }
-        par[b]=a;
+        par[a]=b;
         siz[b]+=siz[a];
     }
 }
